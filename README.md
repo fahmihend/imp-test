@@ -34,6 +34,10 @@ $ npm install
 
 ## Running the app
 
+Copy .env.example file and rename it to .env
+
+adjust the setting
+
 Create Database on MYSQL, name of the database based on DB_DATABASE on .env file
 
 ```bash
