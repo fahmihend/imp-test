@@ -13,7 +13,7 @@ export class UserController {
     async getUserList(@Req() req, @Body() body: any) {
         try {
             const pagination: PaginationOptions = createPaginationOptions(req)
-            const [result, total] = await this.userService.getUser(pagination, body)
+            const [result, total] = await this.userService.getUser(pagination, body.search)
             return responsePage(result, total, pagination)
         } catch (e) {
             return responseError(e.message, 400)

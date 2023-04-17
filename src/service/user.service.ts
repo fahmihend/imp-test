@@ -24,7 +24,6 @@ export class UserService {
           }),
         );
       }
-      console.log(await query.getMany())
       return await query.take(pagination.queryPage)
       .limit(pagination.limit)
       .getManyAndCount();
