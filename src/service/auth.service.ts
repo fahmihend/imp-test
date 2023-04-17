@@ -2,9 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectEntityManager } from '@nestjs/typeorm';
 import * as bcrypt from 'bcryptjs';
 import * as jwt from 'jsonwebtoken';
-import {
-  AuthDto,
-} from 'src/dto/auth.dto';
+import { AuthDto } from 'src/dto/auth.dto';
 import { Users } from 'src/entity/users.entity';
 import { Config } from 'src/helper/config.helper';
 import { EntityManager } from 'typeorm';

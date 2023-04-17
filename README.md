@@ -34,6 +34,8 @@ $ npm install
 
 ## Running the app
 
+Create Database on MYSQL, name of the database based on DB_DATABASE on .env file
+
 ```bash
 # development
 $ npm run start

@@ -1,7 +1,5 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import {
-  AuthDto,
-} from 'src/dto/auth.dto';
+import { AuthDto } from 'src/dto/auth.dto';
 import { response, responseError } from 'src/helper/response.helper';
 import { AuthService } from 'src/service/auth.service';
 
@@ -16,7 +14,7 @@ export class AuthController {
       return response('Success', result);
     } catch (e) {
       let code;
-      if (e.message === 'Username already exist') code = 409
+      if (e.message === 'Username already exist') code = 409;
       return responseError(e.message, code);
     }
   }
